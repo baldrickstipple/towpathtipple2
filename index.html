@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baldrick's Towpath Tipple</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Open Sans', sans-serif;
+background:#f5f3eb;
+color:#222;
+}
+
+h1,h2,h3{
+font-family:'Merriweather', serif;
+}
+
+header{
+position:relative;
+height:80vh;
+color:white;
+text-align:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+header video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+header h1{
+font-size:60px;
+margin:0;
+text-shadow:0 2px 10px rgba(0,0,0,0.7);
+}
+
+header p{
+font-size:22px;
+}
+
+nav{
+background:#173b2c;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:70px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.about{
+font-size:18px;
+line-height:1.7;
+}
+
+.boats{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.menu ul{
+padding:0;
+list-style:none;
+}
+
+.menu li{
+padding:6px 0;
+border-bottom:1px solid #ddd;
+}
+
+.events{
+background:#e9e4d6;
+}
+
+.button{
+display:inline-block;
+background:#173b2c;
+color:white;
+padding:12px 22px;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
+}
+
+.map iframe{
+width:100%;
+height:350px;
+border:0;
+border-radius:8px;
+}
+
+.instagram{
+text-align:center;
+}
+
+footer{
+background:#173b2c;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+@media(max-width:700px){
+
+.boats{
+grid-template-columns:1fr;
+}
+
+.menu{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:36px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-canal-boat-1570/1080p.mp4" type="video/mp4">
+</video>
+
+<div>
+<h1>Baldrick's Towpath Tipple</h1>
+<p>A floating canal bar bringing good drinks and good cheer to the towpath</p>
+<a class="button" href="https://gofund.me/8f1d9fd5">Support the Build</a>
+</div>
+
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#boats">Boats</a>
+<a href="#menu">Menu</a>
+<a href="#events">Events</a>
+<a href="#find">Find Us</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+
+<h2>About</h2>
+
+<div class="about">
+
+<p>
+Baldrick’s Towpath Tipple is a unique floating canal bar travelling the UK waterways.
+Serving real ale, cider, wine and bar snacks, we bring a friendly canalside atmosphere
+to festivals, towpaths and boating gatherings.
+</p>
+
+<p>
+The project centres around two historic narrowboats — the motor boat
+<strong>Baldrick</strong> and the butty boat <strong>Tipple</strong>.
+Together they form a travelling canal pub, celebrating waterways heritage
+and great independent drinks.
+</p>
+
+</div>
+
+</section>
+
+<section id="boats">
+
+<h2>The Boats</h2>
+
+<div class="boats">
+
+<div class="card">
+<h3>Baldrick</h3>
+<p>
+Baldrick is the motor boat powering the operation.
+She tows Tipple across the canal network, bringing the bar
+wherever the waterways lead.
+</p>
+</div>
+
+<div class="card">
+<h3>Tipple</h3>
+<p>
+Tipple (formerly the butty TAM) is being converted into a dedicated
+floating bar with solar power, upgraded electrics and proper beer
+dispense.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2>Drinks Menu</h2>
+
+<div class="menu">
+
+<div class="card">
+<h3>On the Pumps</h3>
+<ul>
+<li>Local Real Ale</li>
+<li>Craft Pale Ale</li>
+<li>Traditional Bitter</li>
+<li>Seasonal Guest Beer</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Other Drinks</h3>
+<ul>
+<li>Traditional Cider</li>
+<li>Wine</li>
+<li>Gin & Mixer</li>
+<li>Soft Drinks</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section id="events" class="events">
+
+<h2>Upcoming Events</h2>
+
+<div class="card">
+
+<ul>
+<li>Braunston Historic Boat Rally</li>
+<li>London Canal Festival Pop-Ups</li>
+<li>Towpath Summer Evenings</li>
+</ul>
+
+<p>
+Follow Instagram for the latest locations and pop-up appearances.
+</p>
+
+</div>
+
+</section>
+
+<section id="find">
+
+<h2>Find Us</h2>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=Regents%20Canal%20London&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+<p>
+Baldrick's Towpath Tipple travels the canal network.
+Check social media to see where we’re currently moored.
+</p>
+
+</section>
+
+<section class="instagram">
+
+<h2>Instagram</h2>
+
+<p>Follow the journey of the boats and the build of Tipple.</p>
+
+<a class="button" href="https://www.instagram.com/baldricks_towpath_tipple">
+Visit Instagram
+</a>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: hello@towpathtipple.co.uk</p>
+
+<p>
+Instagram: @baldricks_towpath_tipple  
+<br>
+Facebook: Baldrick's Towpath Tipple
+</p>
+
+</section>
+
+<footer>
+
+<p>© Baldrick's Towpath Tipple</p>
+<p>A Floating Canal Bar</p>
+
+</footer>
+
+</body>
+</html>
